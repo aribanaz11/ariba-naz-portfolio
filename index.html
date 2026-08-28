@@ -323,82 +323,52 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- MLSA Certificate -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-primary transition-colors cursor-pointer group" onclick="openModal('YOUR_MLSA_CERTIFICATE_URL')">
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13]">
                     <div class="flex justify-between items-center mb-2">
                         <i class="fa-brands fa-microsoft text-brand-primary text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-primary transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
                     <h4 class="text-white font-semibold text-sm">Gold MLSA Certificate</h4>
                     <p class="text-xs text-gray-500 mt-1">Microsoft Learn Student Ambassador achievement.</p>
                 </div>
 
                 <!-- Hackathon Certificate -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-secondary transition-colors cursor-pointer group" onclick="openModal('YOUR_HACKATHON_CERTIFICATE_URL')">
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13]">
                     <div class="flex justify-between items-center mb-2">
                         <i class="fa-solid fa-trophy text-brand-secondary text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-secondary transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
                     <h4 class="text-white font-semibold text-sm">Hyderabad Hackathon</h4>
                     <p class="text-xs text-gray-500 mt-1">Collaborative system design and rapid prototyping.</p>
                 </div>
 
                 <!-- Cisco Python -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_PYTHON_URL')">
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13]">
                     <div class="flex justify-between items-center mb-2">
                         <i class="fa-brands fa-python text-brand-accent text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
                     <h4 class="text-white font-semibold text-sm">Cisco: Python Essential</h4>
                     <p class="text-xs text-gray-500 mt-1">Foundational and advanced Python programming.</p>
                 </div>
 
                 <!-- Cisco NLP -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_NLP_URL')">
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13]">
                     <div class="flex justify-between items-center mb-2">
                         <i class="fa-solid fa-brain text-brand-accent text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
                     <h4 class="text-white font-semibold text-sm">Cisco: NLP Essential</h4>
                     <p class="text-xs text-gray-500 mt-1">Natural Language Processing techniques and models.</p>
                 </div>
 
                 <!-- Cisco CyberSecurity -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_CYBERSECURITY_URL')">
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13]">
                     <div class="flex justify-between items-center mb-2">
                         <i class="fa-solid fa-shield-halved text-brand-accent text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
                     <h4 class="text-white font-semibold text-sm">Cisco: CyberSecurity</h4>
                     <p class="text-xs text-gray-500 mt-1">Network defense, threat intelligence, and C Programming.</p>
                 </div>
-
-                <!-- Labmentix -->
-                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-yellow-400 transition-colors cursor-pointer group" onclick="openModal('YOUR_LABMENTIX_URL')">
-                    <div class="flex justify-between items-center mb-2">
-                        <i class="fa-solid fa-award text-yellow-400 text-xl"></i>
-                        <span class="text-xs font-mono text-gray-500 group-hover:text-yellow-400 transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </div>
-                    <h4 class="text-white font-semibold text-sm">Labmentix Internship</h4>
-                    <p class="text-xs text-gray-500 mt-1">Data Science & AI completion credential.</p>
-                </div>
             </div>
         </div>
     </section>
-
-    <!-- Certificate Modal View -->
-    <div id="certModal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center opacity-0 transition-opacity duration-300">
-        <button onclick="closeModal()" class="absolute top-6 right-6 text-white hover:text-brand-primary text-4xl transition-colors">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="max-w-4xl w-full p-4 transform scale-95 transition-transform duration-300" id="certModalContent">
-            <img id="certImage" src="" alt="Certificate" class="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl border border-white/20 mx-auto">
-            <!-- Instructions for Ariba -->
-            <div id="certPlaceholderText" class="mt-4 text-center text-gray-400 bg-brand-card p-4 rounded border border-yellow-500/50">
-                <i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-2"></i> 
-                <strong>Action Needed:</strong> Open <code>index.html</code> and replace the URL in the <code>onclick="openModal(...)"</code> function with the actual image link from LinkedIn!
-            </div>
-        </div>
-    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 px-6 bg-brand-card/30 backdrop-blur-sm border-t border-white/5 text-center">
