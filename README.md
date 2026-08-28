@@ -9,9 +9,9 @@
 ---
 
 ## 💫 About Me
-Hi there! 👋 I'm **Ariba Naz**. I'm currently pursuing my B.Tech in Information Technology at *Global Nature Care Sangathan Group of Institute* in Jabalpur. 
+Hi there! 👋 I'm **Ariba Naz**. I have completed my B.Tech in Information Technology at *Global Nature Care Sangathan Group of Institute* in Jabalpur. 
 
-I have a deep passion for building scalable web applications and uncovering insights from data. I am currently working as a **Data Science & AI Intern at Labmentix** and I am incredibly proud to be a **Gold Microsoft Learn Student Ambassador (MLSA)**.
+I have a deep passion for building scalable web applications and uncovering insights from data. I have hands on experience in **Data Science & AI Intern through my training at Labmentix** and I am incredibly proud to be a **Gold Microsoft Learn Student Ambassador (MLSA)**.
 
 ---
 
