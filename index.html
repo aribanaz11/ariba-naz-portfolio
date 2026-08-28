@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariba Naz | Full-Stack Developer & Data Science Researcher</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Config for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#030712',
+                            card: '#111827',
+                            primary: '#3b82f6',
+                            secondary: '#8b5cf6',
+                            accent: '#06b6d4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-gray-200 antialiased overflow-x-hidden selection:bg-brand-primary selection:text-white">
+
+    <!-- Glowing Background Orbs -->
+    <div class="fixed top-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-brand-primary/20 blur-[120px] -z-10 pointer-events-none"></div>
+    <div class="fixed bottom-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-secondary/20 blur-[150px] -z-10 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-white">
+                <span class="text-brand-primary">&lt;</span>Ariba<span class="text-brand-secondary">Naz/&gt;</span>
+            </a>
+            <div class="hidden md:flex gap-8 items-center font-medium">
+                <a href="#about" class="hover:text-brand-primary transition-colors">About</a>
+                <a href="#experience" class="hover:text-brand-primary transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-brand-primary transition-colors">Projects</a>
+                <a href="#contact" class="px-5 py-2 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary text-white hover:scale-105 transition-transform shadow-lg shadow-brand-primary/25">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 relative">
+        <div class="max-w-4xl w-full text-center reveal">
+            <p class="text-brand-accent font-mono mb-4 text-sm md:text-base tracking-wide">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
+                Ariba Naz.
+            </h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-400 mb-6 tracking-tight">
+                I build scalable systems & explore data.
+            </h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I'm an IT Graduate, Full-Stack Developer (MERN), and Gold Microsoft Learn Student Ambassador. Deeply passionate about Data Science, machine learning, and building robust backend architectures.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-3 rounded-full bg-white text-brand-dark font-bold hover:bg-gray-200 transition-colors">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-full border border-gray-600 hover:border-brand-primary hover:text-brand-primary transition-colors">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="py-24 px-6 bg-brand-card/30 backdrop-blur-sm border-y border-white/5">
+        <div class="max-w-5xl mx-auto reveal">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-bold text-white">My Expertise</h2>
+                <div class="h-[1px] bg-gray-700 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Skill Card 1: Full Stack -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-primary/50 transition-colors group">
+                    <i class="fa-solid fa-server text-4xl text-brand-primary mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-semibold text-white mb-3">Full-Stack MERN</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Building scalable web applications, robust APIs, and secure authentication flows.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: Data Science -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-secondary/50 transition-colors group">
+                    <i class="fa-solid fa-chart-network text-4xl text-brand-secondary mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-semibold text-white mb-3">Data Science & ML</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Predictive modeling, feature engineering, quantitative research, and ML pipeline automation.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: Leadership/Cloud -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-accent/50 transition-colors group">
+                    <i class="fa-brands fa-microsoft text-4xl text-brand-accent mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-semibold text-white mb-3">Cloud & Leadership</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Gold MLSA leading workshops, deploying ML models, and leveraging cloud-native tools.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Azure ML</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto reveal">
+            <div class="flex items-center gap-4 mb-16">
+                <h2 class="text-3xl font-bold text-white">Experience & Leadership</h2>
+                <div class="h-[1px] bg-gray-700 flex-grow"></div>
+            </div>
+
+            <div class="relative border-l border-gray-700 ml-3 md:ml-0 space-y-12">
+                <!-- Role 1 (Labmentix Internship) -->
+                <div class="pl-8 relative">
+                    <div class="absolute w-4 h-4 bg-brand-primary rounded-full -left-[9px] top-1 border-4 border-brand-dark"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Data Science & AI Intern</h3>
+                        <span class="text-brand-accent font-mono text-sm">Present</span>
+                    </div>
+                    <h4 class="text-lg text-gray-400 mb-4">Labmentix Edtech Pvt. Ltd.</h4>
+                    <ul class="list-none space-y-2 text-gray-400 text-sm">
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-primary mt-1"></i> Completed an intensive internship focused on Data Science and Artificial Intelligence.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-primary mt-1"></i> Developed and deployed predictive machine learning models, including EMI Prediction and Zomato Data Analysis.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-primary mt-1"></i> Gained hands-on experience in data preprocessing, exploratory data analysis (EDA), and algorithmic optimization.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="pl-8 relative">
+                    <div class="absolute w-4 h-4 bg-brand-secondary rounded-full -left-[9px] top-1 border-4 border-brand-dark"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Gold Microsoft Learn Student Ambassador</h3>
+                        <span class="text-brand-accent font-mono text-sm">2023 – 2025</span>
+                    </div>
+                    <h4 class="text-lg text-gray-400 mb-4">Microsoft (MLSA Program)</h4>
+                    <ul class="list-none space-y-2 text-gray-400 text-sm">
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-secondary mt-1"></i> Built ML workflows using Azure Machine Learning Studio for training, tuning, and deployment.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-secondary mt-1"></i> Mentored juniors on Python, APIs, and ML, organizing cloud architecture workshops.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-angle-right text-brand-secondary mt-1"></i> Explored Data + AI and helped peers adopt Azure Functions and GitHub Actions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-brand-card/30 backdrop-blur-sm border-y border-white/5">
+        <div class="max-w-5xl mx-auto reveal">
+            <div class="flex items-center gap-4 mb-16">
+                <h2 class="text-3xl font-bold text-white">Featured Projects</h2>
+                <div class="h-[1px] bg-gray-700 flex-grow"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-brand-primary/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-brand-primary"></i>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-brand-primary transition-colors">Paytm Clone</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            A secure digital wallet application enabling user-to-user money transfers with real-time balance updates. Implemented robust JWT authentication and utilized MongoDB transactions to ensure ACID compliance during financial transfers.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-brand-secondary/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-brand-secondary"></i>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-brand-secondary transition-colors">Brainly (Second Brain)</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            A digital knowledge repository allowing users to save, categorize, and securely share links, tweets, and notes via unique hashes. Designed with a responsive UI and scalable RESTful API architecture.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>MERN Stack</span>
+                        <span>Express</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-brand-accent/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-brand-accent"></i>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-brand-accent transition-colors">Course Selling App</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            A MERN-based course platform designed with scalable REST APIs and optimized MongoDB data modeling. Features modular backend architecture for efficient request handling and distributed workflows.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>MongoDB</span>
+                        <span>Node.js</span>
+                        <span>Data Modeling</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Our AuthFlow!) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-green-400/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-green-400"></i>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">AuthFlow Architecture</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            A production-ready secure authentication backend featuring Google OAuth 2.0 Identity verification, stateless JSON Web Token (JWT) session management, and Role-Based Access Control protecting private data.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>Express</span>
+                        <span>Google OAuth</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Labmentix Zomato) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-yellow-400/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-yellow-400"></i>
+                            <a href="https://github.com/aribanaz11" target="_blank" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">Zomato Data Analysis</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Comprehensive exploratory data analysis (EDA) and visualization on Zomato restaurant datasets. Extracted insights regarding pricing, ratings, and location trends to assist business decision-making as part of my Labmentix internship.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Data Visualization</span>
+                        <span>EDA</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Labmentix EMI Prediction) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-blue-400/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-regular fa-folder text-4xl text-blue-400"></i>
+                            <a href="https://github.com/aribanaz11" target="_blank" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">EMI Prediction Model</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Developed a predictive machine learning model to accurately forecast Equated Monthly Installments (EMI) based on financial indicators. Leveraged regression algorithms and optimized feature engineering during the Labmentix internship.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 font-mono text-xs text-brand-accent">
+                        <span>Machine Learning</span>
+                        <span>Scikit-learn</span>
+                        <span>Regression</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto reveal">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-bold text-white">Education & Certifications</h2>
+                <div class="h-[1px] bg-gray-700 flex-grow"></div>
+            </div>
+            
+            <div class="glass-card p-6 md:p-8 rounded-2xl border border-white/10 mb-8">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-white">B.Tech in Information Technology</h3>
+                    <span class="text-brand-accent font-mono text-sm">2021 – 2025</span>
+                </div>
+                <h4 class="text-brand-primary mb-2">Global Nature Care Sangathan Group of Institute</h4>
+                <p class="text-gray-400 text-sm">CGPA: 7.25 | Jabalpur, Madhya Pradesh</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- MLSA Certificate -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-primary transition-colors cursor-pointer group" onclick="openModal('YOUR_MLSA_CERTIFICATE_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-brands fa-microsoft text-brand-primary text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-primary transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Gold MLSA Certificate</h4>
+                    <p class="text-xs text-gray-500 mt-1">Microsoft Learn Student Ambassador achievement.</p>
+                </div>
+
+                <!-- Hackathon Certificate -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-secondary transition-colors cursor-pointer group" onclick="openModal('YOUR_HACKATHON_CERTIFICATE_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-solid fa-trophy text-brand-secondary text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-secondary transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Hyderabad Hackathon</h4>
+                    <p class="text-xs text-gray-500 mt-1">Collaborative system design and rapid prototyping.</p>
+                </div>
+
+                <!-- Cisco Python -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_PYTHON_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-brands fa-python text-brand-accent text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Cisco: Python Essential</h4>
+                    <p class="text-xs text-gray-500 mt-1">Foundational and advanced Python programming.</p>
+                </div>
+
+                <!-- Cisco NLP -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_NLP_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-solid fa-brain text-brand-accent text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Cisco: NLP Essential</h4>
+                    <p class="text-xs text-gray-500 mt-1">Natural Language Processing techniques and models.</p>
+                </div>
+
+                <!-- Cisco CyberSecurity -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-brand-accent transition-colors cursor-pointer group" onclick="openModal('YOUR_CISCO_CYBERSECURITY_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-solid fa-shield-halved text-brand-accent text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-brand-accent transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Cisco: CyberSecurity</h4>
+                    <p class="text-xs text-gray-500 mt-1">Network defense, threat intelligence, and C Programming.</p>
+                </div>
+
+                <!-- Labmentix -->
+                <div class="p-4 border border-white/10 rounded-xl bg-[#090d13] hover:border-yellow-400 transition-colors cursor-pointer group" onclick="openModal('YOUR_LABMENTIX_URL')">
+                    <div class="flex justify-between items-center mb-2">
+                        <i class="fa-solid fa-award text-yellow-400 text-xl"></i>
+                        <span class="text-xs font-mono text-gray-500 group-hover:text-yellow-400 transition-colors">View <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                    <h4 class="text-white font-semibold text-sm">Labmentix Internship</h4>
+                    <p class="text-xs text-gray-500 mt-1">Data Science & AI completion credential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal View -->
+    <div id="certModal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-white hover:text-brand-primary text-4xl transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full p-4 transform scale-95 transition-transform duration-300" id="certModalContent">
+            <img id="certImage" src="" alt="Certificate" class="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl border border-white/20 mx-auto">
+            <!-- Instructions for Ariba -->
+            <div id="certPlaceholderText" class="mt-4 text-center text-gray-400 bg-brand-card p-4 rounded border border-yellow-500/50">
+                <i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-2"></i> 
+                <strong>Action Needed:</strong> Open <code>index.html</code> and replace the URL in the <code>onclick="openModal(...)"</code> function with the actual image link from LinkedIn!
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-brand-card/30 backdrop-blur-sm border-t border-white/5 text-center">
+        <div class="max-w-2xl mx-auto reveal">
+            <p class="text-brand-accent font-mono text-sm mb-4">04. What's Next?</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h2>
+            <p class="text-gray-400 mb-10 text-lg">
+                I'm currently looking for new opportunities in Software Engineering and Data Science. Whether you have a question or want to collaborate, my inbox is always open!
+            </p>
+            <a href="mailto:nazariba8@gmail.com" class="inline-block px-10 py-4 rounded-full border-2 border-brand-primary text-brand-primary font-bold hover:bg-brand-primary/10 transition-colors">
+                Say Hello <i class="fa-regular fa-paper-plane ml-2"></i>
+            </a>
+
+            <div class="flex justify-center gap-8 mt-16">
+                <a href="https://github.com/aribanaz11" target="_blank" class="text-gray-500 hover:text-white transition-colors text-2xl transform hover:-translate-y-1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ariba-naz-3774b9249/" target="_blank" class="text-gray-500 hover:text-[#0a66c2] transition-colors text-2xl transform hover:-translate-y-1"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center border-t border-white/5">
+        <p class="text-gray-600 font-mono text-sm">
+            Designed & Built by Ariba Naz
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

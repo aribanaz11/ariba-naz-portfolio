@@ -1,0 +1,60 @@
+/* Custom Styles & Overrides */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Custom dark gradient fallback if Tailwind bg isn't enough */
+    background: #030712; 
+}
+
+/* Glassmorphism utility */
+.glass-card {
+    background: rgba(17, 24, 39, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Skill Tags */
+.skill-tag {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(59, 130, 246, 0.1);
+    color: #93c5fd;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Scroll Reveal Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar Scrolled State */
+nav.scrolled {
+    background: rgba(3, 7, 18, 0.9);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Custom Selection */
+::selection {
+    background: #3b82f6;
+    color: #fff;
+}
